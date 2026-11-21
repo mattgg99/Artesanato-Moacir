@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artesanato da Turma</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <a class="marca" href="cliente.html">🏺 Artesanato da Turma</a>
+
+    <div class="busca">
+      <input type="search" id="busca" placeholder="Buscar artesanatos...">
+    </div>
+
+    <div class="acoes">
+      <a id="link-vendedor" class="btn-icone" href="vendedor.html" hidden>Cadastrar produtos</a>
+      <button id="btn-tema" class="btn-icone" type="button" aria-label="Alternar tema">🌙</button>
+      <button id="sair" class="btn-icone" type="button">Sair</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="selo">Feito com tempo, feito para durar</span>
+      <h1>Artesanato feito à mão com carinho</h1>
+      <p>Peças únicas feitas pela nossa turma.</p>
+      <a class="btn-link" href="#produtos">Explorar produtos →</a>
+    </div>
+    <div class="hero-imagem"></div>
+  </section>
+
+  <nav class="filtros">
+    <button class="pilula ativa" data-categoria="Todos">Todos</button>
+    <button class="pilula" data-categoria="Madeira">Madeira</button>
+    <button class="pilula" data-categoria="Cerâmica">Cerâmica</button>
+    <button class="pilula" data-categoria="Tecelagem">Tecelagem</button>
+    <button class="pilula" data-categoria="Decoração">Decoração</button>
+    <button class="pilula" data-categoria="Outros">Outros</button>
+  </nav>
+
+  <div class="topo-lista" id="produtos">
+    <h2>Feitos à mão, escolhidos para você</h2>
+    <span class="contador" id="contador"></span>
+  </div>
+
+  <main class="grade" id="lista"></main>
+
+  <div id="modal-compra" class="modal" hidden>
+    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <h2 id="modal-titulo"></h2>
+      <p id="modal-preco" class="preco"></p>
+
+      <p class="ajuda">1. Pague pelo Pix na chave abaixo:</p>
+      <div class="pix-caixa" id="modal-pix"></div>
+      <button type="button" id="btn-copiar-pix" class="btn-secundario">Copiar chave Pix</button>
+
+      <p class="ajuda">2. Depois, preencha seus dados e envie pelo WhatsApp do vendedor:</p>
+      <form id="form-pedido">
+        <input type="text" id="pedido-nome" placeholder="Seu nome" required>
+        <input type="text" id="pedido-sala" placeholder="Sala (ex: 8B)" required>
+        <input type="text" id="pedido-serie" placeholder="Série (ex: 2º ano)" required>
+        <button type="submit">Enviar pedido pelo WhatsApp</button>
+      </form>
+
+      <button type="button" id="modal-fechar" class="btn-secundario">Fechar</button>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <span>🏺 Artesanato da Turma</span>
+    <span>© 2026 · Projeto escolar</span>
+  </footer>
+
+  <script type="module" src="js/catalogo.js"></script>
+  <script type="module" src="js/tema.js"></script>
+</body>
+</html>

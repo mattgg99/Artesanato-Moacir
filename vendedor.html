@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do vendedor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <a class="marca" href="vendedor.html">🏺 Área do vendedor</a>
+
+    <div class="acoes">
+      <a class="btn-icone" href="cliente.html">Ver catálogo</a>
+      <button id="btn-tema" class="btn-icone" type="button" aria-label="Alternar tema">🌙</button>
+      <button id="sair" class="btn-icone" type="button">Sair</button>
+    </div>
+  </header>
+
+  <main class="centro">
+    <form id="form-produto" class="card-form">
+      <h2 id="titulo-form">Novo produto</h2>
+
+      <input type="text" id="nome" placeholder="Nome do produto" maxlength="80" required>
+
+      <select id="categoria" required>
+        <option value="">Escolha a categoria</option>
+        <option>Madeira</option>
+        <option>Cerâmica</option>
+        <option>Tecelagem</option>
+        <option>Decoração</option>
+        <option>Outros</option>
+      </select>
+
+      <textarea id="descricao" rows="3" placeholder="Descrição" maxlength="300" required></textarea>
+
+      <input type="text" id="preco" inputmode="decimal" placeholder="Preço (ex: 25,90)" required>
+      <p class="ajuda" id="previa">Preço: digite um valor, ex: 25,90</p>
+
+      <input type="url" id="imagem" placeholder="Link da imagem (opcional)">
+
+      <input type="tel" id="whatsapp" placeholder="WhatsApp com DDD (ex: 82 99999-9999)">
+      <input type="text" id="pix" placeholder="Chave Pix (CPF, celular, e-mail ou aleatória)">
+      <p class="ajuda">WhatsApp e Pix são opcionais. Com os dois preenchidos, aparece o botão Comprar.</p>
+
+      <button type="submit" id="btn-salvar">Adicionar produto</button>
+      <button type="button" id="btn-cancelar" class="btn-secundario" hidden>Cancelar edição</button>
+      <p class="erro" id="erro"></p>
+    </form>
+
+    <h2 class="titulo-lista">Produtos cadastrados</h2>
+    <ul id="lista-produtos" class="lista-simples"></ul>
+  </main>
+
+  <script type="module" src="js/vendedor.js"></script>
+  <script type="module" src="js/tema.js"></script>
+</body>
+</html>
