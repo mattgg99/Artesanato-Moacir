@@ -481,3 +481,19 @@ img { max-width: 100%; height: auto; }
   /* Rodapé empilhado */
   .rodape { flex-direction: column; padding: 1.5rem 1rem; }
 }
+/* ===== Ajustes finais para celular ===== */
+
+@media (max-width: 600px) {
+  /* Mostra a descrição inteira, sem cortar */
+  .descricao {
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
+
+  /* Banner um pouco mais baixo e centralizado na foto */
+  .hero-imagem {
+    min-height: 200px;
+    background-position: center 30%, center;
+  }
+}
