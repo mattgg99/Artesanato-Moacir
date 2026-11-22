@@ -496,8 +496,3 @@ img { max-width: 100%; height: auto; }
     min-height: 200px;
     background-position: center 30%, center;
   }
-}
-/* ===== Foto do banner ===== */
-.hero-imagem {
-  background: url("blob:https://chatgpt.com/7551f94b-0dfe-4439-80bf-20793fcbc260") center / cover no-repeat;
-}
