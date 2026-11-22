@@ -506,3 +506,20 @@ img { max-width: 100%; height: auto; }
 /* ===== Logo no cabeçalho ===== */
 .marca { display: inline-flex; align-items: center; gap: .4rem; }
 .logo { height: 23px; width: auto; }
+
+/* ===== Banner menor no celular ===== */
+@media (max-width: 600px) {
+  .hero {
+    margin: .75rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .hero-imagem {
+    min-height: 0;
+    height: 140px;
+    background-position: center 40%;
+  }
+
+  .hero p { display: none; }
+}
