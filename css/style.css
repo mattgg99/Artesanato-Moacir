@@ -496,3 +496,7 @@ img { max-width: 100%; height: auto; }
     min-height: 200px;
     background-position: center 30%, center;
   }
+ /* ===== Foto do banner ===== */
+.hero-imagem {
+  background: url("../img/banner.png") center / cover no-repeat;
+}
