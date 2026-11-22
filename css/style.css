@@ -496,7 +496,11 @@ img { max-width: 100%; height: auto; }
     min-height: 200px;
     background-position: center 30%, center;
   }
- /* ===== Foto do banner ===== */
+/* ===== Foto do banner ===== */
 .hero-imagem {
-  background: url("../img/banner.png") center / cover no-repeat;
+  background: url("../img/banner.jpg") center / cover no-repeat;
 }
+
+/* ===== Logo no cabeçalho ===== */
+.marca { display: inline-flex; align-items: center; gap: .4rem; }
+.logo { height: 40px; width: auto; }
