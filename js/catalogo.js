@@ -164,7 +164,7 @@ formPedido.addEventListener("submit", (e) => {
   const mensagem =
     `Olá! Quero comprar: ${produtoEmCompra.nome} (${formatarPreco(produtoEmCompra.preco)}).\n` +
     `Nome: ${nome}\nSala: ${sala}\nSérie: ${serie}\n` +
-    `Estou interressado(a) no seu produto que vi no catálogo do projeto do Artesanato Moacir.`;
+    `Olá, tudo bem? realizei a compra do seu produto recentemente, onde posso buscá-lo (ou receber)?`;
 
   window.open(linkWhatsapp(produtoEmCompra.whatsapp, mensagem), "_blank");
   fecharCompra();
