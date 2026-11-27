@@ -26,23 +26,30 @@
       </ul>
     </div>
 
-    <div class="card-form entrada-login">
-      <h2>Entrar</h2>
-      <p class="ajuda">Já tem conta? Use seu e-mail e senha.</p>
-      <form id="form-login">
-        <input type="email" id="email" placeholder="E-mail" required>
-        <input type="password" id="senha" placeholder="Senha (mín. 6 caracteres)" required>
-        <button type="submit">Entrar</button>
-        <p class="erro" id="erro"></p>
-      </form>
+    <div class="entrada-cards">
 
-      <div class="separador"><span>ou</span></div>
+  <div class="card-form entrada-login">
+    <h2>Já tenho conta</h2>
+    <p class="ajuda">Entre com o e-mail e a senha que você criou.</p>
+    <form id="form-login">
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+      <p class="erro" id="erro"></p>
+    </form>
+  </div>
 
-      <div class="criar-conta">
-        <p class="ajuda">Ainda não tem conta?</p>
-        <button type="button" id="btn-cadastrar" class="btn-secundario">Criar conta de cliente</button>
-      </div>
+    <div class="card-form entrada-cadastro">
+      <h2>Primeira vez aqui?</h2>
+      <p class="ajuda">Crie sua conta de cliente e escolha a sua senha. Ela será usada para entrar nas próximas vezes.</p>
+      <input type="email" id="cadastro-email" placeholder="Seu e-mail" required>
+      <input type="password" id="cadastro-senha" placeholder="Crie sua senha (mín. 6 caracteres)" required>
+      <button type="button" id="btn-cadastrar" class="btn-secundario">Criar conta de cliente</button>
+      <p class="erro" id="erro-cadastro"></p>
     </div>
+
+   </div>
+  </div>
   </section>
 
   <section class="como-funciona">
