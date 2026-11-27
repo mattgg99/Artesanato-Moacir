@@ -1306,3 +1306,8 @@ button:disabled {
 .entrada-cadastro {
   border-top: 3px solid var(--cor-destaque);
 }
+
+
+.entrada-texto {
+  margin-top: -2rem;
+}
