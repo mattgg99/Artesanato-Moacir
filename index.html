@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artesanato Moacir</title>
+  <title>Feirão digital do moacir</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="cabecalho">
-    <a class="marca" href="index.html">🏺 Artesanato Moacir</a>
+    <a class="marca" href="index.html">Feirão digital do moacir</a>
     <div class="acoes">
       <button id="btn-tema" class="btn-icone" type="button" aria-label="Alternar tema">🌙</button>
     </div>
@@ -28,14 +28,20 @@
 
     <div class="card-form entrada-login">
       <h2>Entrar</h2>
-      <p class="ajuda">Use seu e-mail e senha. Ainda não tem conta? Crie uma abaixo.</p>
+      <p class="ajuda">Já tem conta? Use seu e-mail e senha.</p>
       <form id="form-login">
         <input type="email" id="email" placeholder="E-mail" required>
         <input type="password" id="senha" placeholder="Senha (mín. 6 caracteres)" required>
         <button type="submit">Entrar</button>
-        <button type="button" id="btn-cadastrar" class="btn-secundario">Criar conta de cliente</button>
         <p class="erro" id="erro"></p>
       </form>
+
+      <div class="separador"><span>ou</span></div>
+
+      <div class="criar-conta">
+        <p class="ajuda">Ainda não tem conta?</p>
+        <button type="button" id="btn-cadastrar" class="btn-secundario">Criar conta de cliente</button>
+      </div>
     </div>
   </section>
 
@@ -66,7 +72,7 @@
   </section>
 
   <footer class="rodape">
-    <span>🏺 Artesanato Moacir</span>
+    <span>Feirão digital do moacir</span>
     <span>© 2026 · Projeto escolar</span>
   </footer>
 
