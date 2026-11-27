@@ -1282,3 +1282,27 @@ button:disabled {
     opacity: 1;
   }
 }
+
+
+
+/* Tela de entrada: cartões de login e de cadastro separados */
+.entrada-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.entrada-cards .card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.entrada-cards h2 {
+  margin: 0;
+}
+
+/* Cartão de cadastro com destaque no topo */
+.entrada-cadastro {
+  border-top: 3px solid var(--cor-destaque);
+}
