@@ -1302,12 +1302,9 @@ button:disabled {
   margin: 0;
 }
 
-/* Cartão de cadastro com destaque no topo */
-.entrada-cadastro {
-  border-top: 3px solid var(--cor-destaque);
-}
 
 
 .entrada-texto {
-  margin-top: -2rem;
+  align-self: start;
+  margin-top: -3rem;
 }
